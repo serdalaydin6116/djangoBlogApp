@@ -4,8 +4,7 @@ ul {
     padding: 0;
     
   }  
-  li a {  
-   
+  li a {    
    color: white;  
   }
 
@@ -13,13 +12,10 @@ ul {
     background-color:darkolivegreen;  
     color: black;
   }
-
-  a:link, a:visited {    
-    
+  a:link, a:visited {        
     padding: 0px 6px;
     /* text-align: center; */
-    text-decoration: none;
-    
+    text-decoration: none;    
   }
 
 .container-fluid{
@@ -28,20 +24,18 @@ ul {
     
   background-color:rgb(88, 103, 146);
   /* justify-content: space-evenly;   */
-  padding: 6px 40px; 
-   
+  padding: 6px 40px;    
 }
 
 .navbar-right, .navbar-nav, .navbar-brand{
     display: flex;
     flex-direction: row;
     font-size: 1rem;
-    color: white;
-    
+    color: white;    
     font-style: oblique;
-    align-items: center;  
-   
+    align-items: center;     
 }
+
 .navbar-brand{
   font-style: normal;
   font-weight: 700;
