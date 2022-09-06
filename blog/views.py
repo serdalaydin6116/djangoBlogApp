@@ -8,4 +8,14 @@ from django.contrib import messages
 
 def home(request):    
 
-    return render(request, 'blog/home.html')
+    posts=Post.objects.all()
+    context= {
+        'posts': posts,
+    }
+    return render(request, 'blog/post_list.html', context)
+    
+
+
+
+    
+
