@@ -1,11 +1,7 @@
-{% extends "base.html" %} 
+{% extends "blog/base.html" %} 
 
 
-<head>    
-    
-    <link rel="stylesheet" href=" {% static '../blog/static/blog/css/navbar_style.css' %} " />
-   
-</head>
+
 
 
 {% block navbar %}
@@ -20,11 +16,12 @@
             
     </ul>
     <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#"><span class="user"></span> Register</a></li>
+        <li><a href="#"><span class="login"></span> Login</a></li>
     </ul>
   </div>
-</nav>    
+</nav>  
+<h1>Clarusway Blog Page</h1>  
     
 
 {% endblock navbar %}
