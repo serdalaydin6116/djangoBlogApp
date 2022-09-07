@@ -17,8 +17,7 @@
     <title>Clarusway Blog</title>
   </head>
 
-  <body>
-      
+  <body>        
 
 
     {% if messages %} 
@@ -32,12 +31,26 @@
     {% endif %}
 
 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+            
+        <ul class="nav navbar-nav">
+            <li class="navbar-brand color-warning">Resdal's Blog</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
+                
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="user"></span> Register</a></li>
+            <li><a href="#"><span class="login"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>  
+    <h1>Clarusway Blog Page</h1>  
 
-    {% block navbar %}
+
+
     
-      
-      
-    {% endblock navbar %} 
 
     <div style="margin-top: 100px; margin-bottom: 100px" class="container">
 
