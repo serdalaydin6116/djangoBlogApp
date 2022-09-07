@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import home
+from .views import home, blog_create, blog_update, blog_delete
 
 urlpatterns=[
     path('', home, name='home'),
-    # path('list/', list, name='list'),
-    # path('update/<int:id>', todo_update, name='update'),
-    # path('delete/<int:id>', todo_delete, name='delete')
+    path('add/', blog_create, name='add'),
+    path('update/<int:id>', blog_update, name='update'),
+    path('delete/<int:id>', blog_delete, name='delete'),
 
 
 ]
