@@ -5,7 +5,7 @@ urlpatterns=[
     path('', home, name='home'),
     path('add/', blog_create, name='add'),
     path('update/<int:id>', blog_update, name='update'),
-    path('delete/<int:id>', blog_delete, name='delete'),
+    path('delete/<int:id>/', blog_delete, name='delete'),
 
 
 ]
