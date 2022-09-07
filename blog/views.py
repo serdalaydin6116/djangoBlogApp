@@ -21,6 +21,7 @@ def blog_create(request):
         form=PostForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, "Post created succesfully!")
             return redirect('home')
     
     context={
@@ -36,6 +37,7 @@ def blog_update (request, id):
         form=PostForm(request.POST,instance=post)
         if form.is_valid():
             form.save()
+            messages.success(request, "Post updated succesfully!")
             return redirect('home')
     context ={ 
         
@@ -47,8 +49,9 @@ def blog_delete(request, id):
     post=Post.objects.get(id=id)
     if request.method=='POST':
         post.delete()
+        messages.success(request, "Post deleted succesfully!")
         return redirect ('home')
-    return render (render, 'blog/post_delete')
+    return render (request, 'blog/post_delete.html')
 
     
 
