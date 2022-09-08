@@ -1,9 +1,11 @@
-# from django.urls import path
-# from .views import login
+from django.urls import path
+from .views import home
 
 
-# urlpatterns=[
-#     path('users/', login, name='login'),
+urlpatterns=[
+
+
+    path('users/', login, name='login'),
    
 
 
