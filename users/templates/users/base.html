@@ -46,7 +46,27 @@
         </ul>
       </div>
     </nav>  
-    <h1>Clarusway Blog Page</h1>  
+    <h1>Clarusway Blog Page</h1> 
+    
+    {% if user.is_authenticated %} 
+        <h1>
+            Hello {{user.username | title}}    
+        </h1>
+        
+        {% comment %}
+        <a href="{% url 'logout' %}">Logout</a>
+        {% endcomment %}
+            
+        
+    {% else %}
+        <h1>Hello, please login to see the page.</h1>
+        
+        {% comment %}
+        <a href="{% url 'login' %}">Login</a> 
+        {% endcomment %}
+            
+        
+    {% endif %}
 
 
 
