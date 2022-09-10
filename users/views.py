@@ -1,20 +1,22 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, authenticate
 
 def home(request):
     return render(request, 'users/base.html')
 
 
 @login_required
-def login(request):
-    return render(request, "registration/login.html")
+def special(request):
+    return render(request, "users/special.html")
 
 
 
 
 
 def register(request):
-    def register(request):
+   
     form = UserCreationForm(request.POST or None)
     # form = UserCreationForm()
     # if request.method=='POST':
