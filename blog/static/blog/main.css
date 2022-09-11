@@ -1,7 +1,7 @@
 body {
     background-color: #fafafa;
     color: #333333;
-    margin-top: 5rem;
+    margin-top: 20rem;
 }
 
 h1,
@@ -13,9 +13,14 @@ h6 {
     color: #444444;
 }
 
-ul {
+/* ul {
     margin: 0;
-}
+    display: flex;
+    flex-direction: row;
+} */
+/* li{
+    display: flex;
+} */
 
 .bg-steel {
     background-color: #5f788a;
@@ -50,3 +55,18 @@ ul {
     font-size: 2.5rem;
 }
 
+/* .container{
+    display: flex;
+    flex-direction: row;
+} */
+
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
