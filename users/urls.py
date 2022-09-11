@@ -1,18 +1,22 @@
 from django.urls import path
-from .views import home, special, user_login, user_register, user_password_change
+from .views import home, user_login, user_register, user_logout, user_profile
 
-# login, register
+# from django.contrib.auth import views as auth_views
+
+
 
 
 urlpatterns=[
 
 
-    # path('', home, name='home'),
+    
    
     path('', home, name='home'),
-    path('special/', special, name='special'),
+    # path('special/', special, name='special'),
     path('login/', user_login, name='login'),
+    path('logout/', user_logout, name='logout'),
     path('register/', user_register, name='register'),
+    path("profile/", user_profile, name="profile"),
    
 
 
