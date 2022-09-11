@@ -1,17 +1,17 @@
-{% extends "users/base.html" %}
+{% extends "base.html" %}
 
 
 
 
 
 {% block container %}
-{% comment %} {% load crispy_forms_tags %} {% endcomment %}
+{% load crispy_forms_tags %} 
 
 <div class="row">
     <div class="col-md-6 offset-md-3">
       <h3>Please Login</h3>
   
-      <form action="{% url 'user_login' %}" method="post">
+      <form action="{% url 'login' %}" method="post">
         {% csrf_token %} 
         {{form.as_p}}
         <button type="submit" class="btn btn-danger">Login</button>
