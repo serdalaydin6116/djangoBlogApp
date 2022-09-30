@@ -1,9 +1,8 @@
 {% extends "base.html" %}
-
 {% load crispy_forms_tags %}
 
-{% block container %}
 
+{% block container %}
 <div class="content-section">
     <div class="media">
         <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
@@ -14,11 +13,10 @@
     </div>
     <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Profile</legend>
-            {{ user_form|crispy }}
-            {{ profile_form|crispy }}
+            {{ u_form|crispy }}
+            {{ p_form|crispy }}
         </fieldset>
         <div class="form-group">
             <button class="btn btn-outline-info" type="submit">Update</button>
