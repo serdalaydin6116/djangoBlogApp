@@ -7,8 +7,7 @@
     <h3>Update Post</h3>
     <hr />
     <form method="POST" enctype="multipart/form-data">
-      {% csrf_token %} 
-      {{form|crispy}}
+      {% csrf_token %} {{form|crispy}}
       <br />
       <button type="submit" class="btn btn-outline-info">Update</button>
     </form>
